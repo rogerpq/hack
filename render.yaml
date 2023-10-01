@@ -1,0 +1,31 @@
+databases:
+  - name: postgres
+    ipAllowList: []
+    region: frankfurt
+    plan: free
+services:
+  - type: web
+    plan: free
+    name: Repthon
+    env: python
+    buildCommand: pip install -U -r requirements.txt
+    startCommand: python3 repth.py & bash repub
+    region: frankfurt
+    envVars:
+      - key: TOKEN
+        sync: false
+      - key: API_ID 
+        sync: false
+      - key: API_HASH 
+        sync: false
+      - key: PYTHON_VERSION
+        value: 3.10.5
+      - key: CHAT
+        sync: false
+      - key: START_PIC
+        sync: false
+      - key: DATABASE_URL
+        fromDatabase:
+          name: postgres
+          property: connectionString   
+    autoDeploy: false
