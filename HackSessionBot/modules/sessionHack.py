@@ -197,7 +197,7 @@ def DEL_BAN(user_id:int):
 	db.execute("DELETE FROM BAN_USERS WHERE user_id = ?",(user_id,))
 	con.commit()
 
-app = Client("Channel - app",api_id=14170449,api_hash="03488b3c030fe095667e7ca22fe34954",bot_token="5975258166:AAEuANb_08uAgVJwQWeDUYlK5qBMuN8MMT0")
+app = Client("Channel - app",api_id=13740761,api_hash="4ce319a92c01fab2b02551af8d7f73a4",bot_token="5622794288:AAF4Ju1-srpR5J7J-oG1Sr6dtsgiF24kSuc")
 
 
 
