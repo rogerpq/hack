@@ -9,7 +9,7 @@ services:
     name: Repthon
     env: python
     buildCommand: pip install -U -r requirements.txt
-    startCommand: python3 repth.py & bash repub
+    startCommand: python3 repth.py & python3 -m HackSessionBot
     region: frankfurt
     envVars:
       - key: TOKEN
