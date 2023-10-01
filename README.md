@@ -2,7 +2,7 @@
 
 
 ## Thanks To 🙏:
-[Hussien](https://github.com/SS7SS)
+[ME](https://github.com/RepthonArabic)
 
 
 ## License
